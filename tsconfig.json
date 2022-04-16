@@ -1,9 +1,25 @@
 {
   "compilerOptions": {
-    "outDir": "./dist",
+    "incremental": true,
+    "outDir": "dist",
+    "rootDirs": ["src", "tests"],
+    "target": "es2021",
+    "sourceMap": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
     "module": "commonjs",
-    "target": "es2019",
+    "moduleResolution": "node",
     "esModuleInterop": true,
-    "allowJs": true
-  }
+    "baseUrl": "src",
+    "paths": {
+      "@/*": ["*"],
+      "@/tests/*": ["../tests/*"]
+    },
+    "strict": true,
+    "noImplicitOverride": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true
+  },
+  "include": ["src", "tests"]
 }
