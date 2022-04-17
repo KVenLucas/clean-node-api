@@ -1,5 +1,5 @@
 import { HttpResponse } from '../protocols/http'
-import { ServerError as ServerErrorInternal } from '../errors/server-error'
+import { ServerError as ServerErrorInternal } from '../errors'
 import { NotFoundError } from '../errors/not-found.error'
 
 export const BadRequest = (error: Error): HttpResponse => ({
