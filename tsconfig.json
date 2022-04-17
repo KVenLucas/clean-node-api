@@ -11,10 +11,6 @@
     "moduleResolution": "node",
     "esModuleInterop": true,
     "baseUrl": "src",
-    "paths": {
-      "@/*": ["*"],
-      "@/tests/*": ["../tests/*"]
-    },
     "strict": true,
     "noImplicitOverride": true,
     "removeComments": true,
